@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+  <title>Mario Kart Animations</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script defer src="index.js"></script>
+  <audio id="audio">
+    <source src="music/Mario's Victory Theme.mp3" type="audio/mpeg" />
+  </audio>
+  <audio id="starHit">
+    <source src="music/Super Mario coin sound (!).mp3" type="audio/mpeg" />
+  </audio>
+  <audio id="bulletHit">
+    <source
+      src="music/Super Mario Bros. - Lost a Life Sound Effect.mp3"
+      type="audio/mpeg"
+    />
+  </audio>
+  <audio id="background">
+    <source src="music/Super Mario Bros. Theme Song.mp3" type="audio/mpeg" />
+  </audio>
+</head>
+<body>
+  <div class="sky" style="animation-play-state: unset;">
+    <div id="score">Earn 3 stars to unlock next box</div>
+    <div class="information">
+      <img src="Pictures/information.png" class="IImg" id="IImg" />
+    </div>
+    <div class="rules" id="rules">
+      Press "Enter" to Start/Pauze and Retry<br />Press "ArrowUP/Down" to Steer
+      Mario<br />
+      Click on the boxes to open when you have enough points!
+    </div>
+    <div id="questions">
+      <div id="question1" class="question">
+        <img src="Pictures/question.png" />
+      </div>
+      <div id="question2" class="question">
+        <img src="Pictures/question.png" />
+      </div>
+      <div id="question3" class="question">
+        <img src="Pictures/question.png" />
+      </div>
+    </div>
+    <div id="reload"></div>
+  </div>
+
+  <div class="grass">
+    <div class="toadhouse" id="toadhouse">
+      <img src="Pictures/toadhouse.png" />
+    </div>
+    <div class="billboard">
+      <div id="bill1" class="billboards">
+        <img src="Pictures/Hallo.png" width="180px" />
+      </div>
+      <div id="bill2" class="billboards">
+        <a href="https://filmzoeker-0.netlify.app/" target="_blank"
+          ><img src="Pictures/projects.png" width="180px" />
+        </a>
+      </div>
+      <div id="bill3" class="billboards">
+        <a href="https://github.com/DucoLetter" target="_blank"
+          ><img src="Pictures/eind.png" width="180px" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="road">
+    <div class="lines"></div>
+    <div id="cart" class="mario_down"><img src="Pictures/mario.png" /></div>
+    <div id="star" class="star_first"><img src="Pictures/Star.png" /></div>
+    <div id="bullet1" class="bullet_up">
+      <img src="Pictures/bullet.png" width="120px" />
+    </div>
+    <div id="bullet2" class="bullet_down">
+      <img src="Pictures/bullet.png" width="120px" />
+    </div>
+  </div>
+</body>
